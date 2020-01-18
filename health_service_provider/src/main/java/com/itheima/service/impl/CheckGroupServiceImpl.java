@@ -22,20 +22,17 @@ public class CheckGroupServiceImpl implements CheckGroupService{
 	@Autowired
 	private CheckGroupMapper checkGroupmapper;
 	
-	@Override
 	public CheckGroup findById(Integer id) {
 		// TODO Auto-generated method stub
 		return checkGroupmapper.findById(id);
 	}
 
-	@Override
 	public void dels(Integer id) {
 		// TODO Auto-generated method stub
 		checkGroupmapper.delsCheckGroupIdAndCheckitemId(id);
 		checkGroupmapper.dels(id);
 	}
 
-	@Override
 	public PageResult pageQuery(QueryPageBean queryPageBean) {
 		// TODO Auto-generated method stub
 		//获取当前页
@@ -56,7 +53,6 @@ public class CheckGroupServiceImpl implements CheckGroupService{
 		return new PageResult(total, rows);
 	}
 	
-	@Override
 	public void add(CheckGroup checkGroup, Integer[] checkItemId) {
 		// TODO Auto-generated method stub
 		//建立新的检查组
@@ -66,13 +62,11 @@ public class CheckGroupServiceImpl implements CheckGroupService{
 		this.updateCheckGroupIdAndCheckitemId(checkGroupId, checkItemId);
 	}
 
-	@Override
 	public List<Integer> findCheckItemIdsAndCheckGroupId(Integer id) {
 		// TODO Auto-generated method stub
 		return checkGroupmapper.findCheckItemIdsAndCheckGroupId(id);
 	}
 
-	@Override
 	public void edit(CheckGroup checkGroup, Integer[] checkItemId) {
 		// TODO Auto-generated method stub
 		checkGroupmapper.edit(checkGroup);
@@ -88,12 +82,17 @@ public class CheckGroupServiceImpl implements CheckGroupService{
 			//循环前台传过来的数组
 			for (Integer checkitemId : checkItemId) {
 				//因为要传2个值，所以利用咱们的map
-				Map map = new HashMap<>();
+				Map map=new HashMap();
 				map.put("checkGroupId", checkGroupId);
 				map.put("checkitemId", checkitemId);
 				//去后台对中间表进行操作
 				checkGroupmapper.updateCheckGroupIdAndCheckitemId(map);
 			}
 		}
+	}
+
+	public List<CheckGroup> findAll() {
+		// TODO Auto-generated method stub
+		return checkGroupmapper.findAll();
 	}
 }

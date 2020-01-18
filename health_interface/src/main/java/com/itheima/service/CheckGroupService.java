@@ -6,7 +6,6 @@ import com.itheima.entity.PageResult;
 import com.itheima.entity.QueryPageBean;
 import com.itheima.pojo.CheckGroup;
 
-
 public interface CheckGroupService {
 
 	CheckGroup findById(Integer id);
@@ -20,5 +19,7 @@ public interface CheckGroupService {
 	void add(CheckGroup checkGroup, Integer[] checkItemId);
 
 	List<Integer> findCheckItemIdsAndCheckGroupId(Integer id);
+
+	List<CheckGroup> findAll();
 	
 }

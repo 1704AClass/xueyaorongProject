@@ -11,6 +11,7 @@ import com.itheima.pojo.CheckItem;
 import com.itheima.service.CheckGroupService;
 import com.itheima.service.CheckItemService;
 
+
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -108,4 +109,15 @@ public class CheckGroupController {
             return new Result(false, MessageConstant.QUERY_CHECKITEM_FAIL);
         }
     }
+    //查询所有 
+    @RequestMapping("/findAll")
+    public Result findAll(){
+    	List<CheckGroup> checkGroupList = checkGroupService.findAll();
+    	if(checkGroupList != null && checkGroupList.size() > 0){ 
+    		Result result = new Result(true, MessageConstant.QUERY_CHECKGROUP_SUCCESS);
+    		result.setData(checkGroupList); return result;
+    	}
+    	return new Result(false,MessageConstant.QUERY_CHECKGROUP_FAIL); 
+    }
 }
+

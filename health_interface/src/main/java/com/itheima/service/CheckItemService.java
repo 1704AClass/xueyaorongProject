@@ -6,21 +6,20 @@ import com.itheima.entity.PageResult;
 import com.itheima.entity.QueryPageBean;
 import com.itheima.pojo.CheckItem;
 
-
 public interface CheckItemService {
 
 	void add(CheckItem checkItem);
 
-	void delete(Integer id);
-
-	void edit(CheckItem checkItem);
+	List<CheckItem> findAll();
 
 	CheckItem findById(Integer id);
 
-	List<CheckItem> findAll();
-
 	PageResult pageQuery(QueryPageBean queryPageBean);
 
+	void delete(Integer id);
+
 	void dels(Integer[] ids);
+
+	void edit(CheckItem checkItem);
 
 }

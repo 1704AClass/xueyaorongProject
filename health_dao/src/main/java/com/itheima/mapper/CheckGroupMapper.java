@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Update;
 
 import com.github.pagehelper.Page;
 import com.itheima.pojo.CheckGroup;
@@ -28,5 +27,7 @@ public interface CheckGroupMapper {
 	void edit(CheckGroup checkGroup);
 
 	void deleteAssocication(Integer id);
+
+	List<CheckGroup> findAll();
 
 }
