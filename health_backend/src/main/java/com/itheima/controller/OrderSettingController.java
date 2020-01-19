@@ -17,7 +17,7 @@ import com.itheima.constant.MessageConstant;
 import com.itheima.entity.Result;
 import com.itheima.pojo.OrderSetting;
 import com.itheima.service.OrderSettingService;
-import com.itheima.untils.POIUtils;
+import com.itheima.utils.POIUtils;
 
 @RestController
 @RequestMapping("/ordersetting")

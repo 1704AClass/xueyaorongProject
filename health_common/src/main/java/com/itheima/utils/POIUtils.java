@@ -1,4 +1,4 @@
-package com.itheima.untils;
+package com.itheima.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
