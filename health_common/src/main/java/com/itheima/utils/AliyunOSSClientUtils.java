@@ -18,10 +18,10 @@ public class AliyunOSSClientUtils {
 	//oss-cn-beijing.aliyuncs.com
 	private String endpoint = "oss-cn-beijing.aliyuncs.com";
 	// accessKey
-	private String accessKeyId = "LTAI4FiXvtktqWmFdwDXACBQ";
-	private String accessKeySecret = "mRhchObtU11TUVVr06WBvS6sU5eFZZ";
+	private String accessKeyId = "LTAI4FuJG65gDsMhSWVPhNqA";
+	private String accessKeySecret = "SqMwkrLKDhuwPFBIQhFgalQ7Tc4r9S";
 	// 空间
-	private String bucketName = "fuceng-image";
+	private String bucketName = "xyr-image";
 	// 文件存储目录
 	private String filedir = "data/";
 

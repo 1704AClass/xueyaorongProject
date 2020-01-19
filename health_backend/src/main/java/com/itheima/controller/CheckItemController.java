@@ -20,7 +20,7 @@ public class CheckItemController {
 	private CheckItemService checkItemService;
 
     /**
-     * 检查项新增
+     * 检查项新增第五天
      */ 
     @RequestMapping("/add")
     public Result add(@RequestBody CheckItem checkItem) {

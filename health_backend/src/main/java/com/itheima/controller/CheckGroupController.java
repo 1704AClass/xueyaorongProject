@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 检查组
+ * 检查组第五天
  */
 @RestController
 @RequestMapping("/checkgroup")
