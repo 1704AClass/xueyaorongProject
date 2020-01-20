@@ -114,10 +114,6 @@
 		<artifactId>poi</artifactId>
 	</dependency>
 	<dependency> 
-		<groupId>redis.clients</groupId> 
-		<artifactId>jedis</artifactId> 
-	</dependency> 
-	<dependency> 
 		<groupId>com.qiniu</groupId> 
 		<artifactId>qiniu-java-sdk</artifactId> 
 	</dependency>

@@ -18,7 +18,7 @@ public class CheckItemServiceImp implements CheckItemService{
 	@Autowired
 	private CheckItemMapper	checkItemMapper;
 	
-	//添加第六天
+	//添加
 	public void add(CheckItem checkItem) {
 		checkItemMapper.add(checkItem);
 		

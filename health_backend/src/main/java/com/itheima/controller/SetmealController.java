@@ -25,7 +25,7 @@ public class SetmealController {
 	@Reference
 	private SetMealService setmealService;
 	
-	//图片上传第六天
+	//图片上传
 	@RequestMapping("/upload")
 	/*public Result upload(MultipartFile imgFile){
 		AliyunOSSClientUtils aliyunOSSClientUtils = new AliyunOSSClientUtils();

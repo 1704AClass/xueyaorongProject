@@ -19,7 +19,7 @@ public class POIUtils {
     private final static String xlsx = "xlsx";
     private final static String DATE_FORMAT = "yyyy/MM/dd";
     /**
-     * 读入excel文件，解析后返回第五天
+     * 读入excel文件，解析后返回
      * @param file
      * @throws IOException
      */
