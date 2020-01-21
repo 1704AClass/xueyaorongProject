@@ -383,8 +383,8 @@
                     if(res.data.flag){
                         //弹出成功提示信息
                         this.$message({
-                            type:"success",
-                            message:res.data.message
+                            message:res.data.message,
+                            type:"success"
                         })
                         //重新执行查询请求
                         this.findPage();
