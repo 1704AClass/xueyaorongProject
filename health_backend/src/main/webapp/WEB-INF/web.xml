@@ -48,4 +48,15 @@
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	 </listener>
+	 <!-- 委派过滤器，整合其他框架 -->
+	 <filter>  
+		<filter-name>springSecurityFilterChain</filter-name>  		
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>  
+	</filter>
+	<!-- 整合springsecurity框架，将名称固定为springSecurityFilterChain -->
+	<filter-mapping>  
+		<filter-name>springSecurityFilterChain</filter-name>  
+		<url-pattern>/*</url-pattern>  
+	</filter-mapping>
+	
 </web-app>

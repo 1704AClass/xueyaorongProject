@@ -241,6 +241,8 @@
            this.findPage();
         },
     methods: {
+    	//分页导出
+    	
         //编辑
         handleEdit() {
             //表单校验
@@ -354,6 +356,8 @@
             this.resetForm();
             this.dialogFormVisible = true;
         },
+        //点赞
+       
         //弹出编辑窗口
         handleUpdate(row) {
             //发送请求获取检查项信息
@@ -383,8 +387,8 @@
                     if(res.data.flag){
                         //弹出成功提示信息
                         this.$message({
-                            message:res.data.message,
-                            type:"success"
+                            type:"success",
+                            message:res.data.message
                         })
                         //重新执行查询请求
                         this.findPage();

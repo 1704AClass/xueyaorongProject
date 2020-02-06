@@ -1,4 +1,4 @@
-package com.itheima.utils;
+﻿package com.itheima.utils;
 
 import java.io.*;
 import java.net.URL;
@@ -18,10 +18,10 @@ public class AliyunOSSClientUtils {
 	//oss-cn-beijing.aliyuncs.com
 	private String endpoint = "oss-cn-beijing.aliyuncs.com";
 	// accessKey
-	private String accessKeyId = "LTAI4FuJG65gDsMhSWVPhNqA";
-	private String accessKeySecret = "SqMwkrLKDhuwPFBIQhFgalQ7Tc4r9S";
+	private String accessKeyId = "LTAI4Fo4x4KoYN5bnxYEgZzM";
+	private String accessKeySecret = "v8z3rAMcEoiSUFEeRtqEpbNDNCRIMb";
 	// 空间
-	private String bucketName = "xyr-image";
+	private String bucketName = "aisile-img";
 	// 文件存储目录
 	private String filedir = "data/";
 

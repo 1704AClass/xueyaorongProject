@@ -1,6 +1,7 @@
 package com.itheima.service.impl;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class SetmealServiceImpl implements SetMealService{
 	@Autowired
 	private SetMealMapper setMealMapper;
 	
+	//添加   setmeal checkgroup多对多
 	public void add(Setmeal setmeal, Integer[] checkgroupIds) {
 		// TODO Auto-generated method stub
 		setMealMapper.add(setmeal);
@@ -47,5 +49,6 @@ public class SetmealServiceImpl implements SetMealService{
     	 Page<Setmeal> page = setMealMapper.findByCondition(queryString);
          return new PageResult(page.getTotal(),page.getResult());
 	}
+	
 
 }
